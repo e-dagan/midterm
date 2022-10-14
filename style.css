@@ -1,0 +1,138 @@
+/* Nav Bar */
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid cornflowerblue;
+    
+}
+
+.topnav a {
+    color: #1d1d1d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    max-height:50vh;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.topnav img{
+  max-height:50vh;  
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    /* color: white;
+    background-color: lightgray); */
+    text-decoration: underline;
+
+}
+
+/* Title */
+.center{
+  color: black;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+
+/* Items  flex the img1 and title1 children in a column */
+.flexbox-container{
+  display: flex;
+  border: 3px solid red;
+  background-color: yellow;
+  color: black;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 12px;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Images Row 1 w/ text*/
+.image-container1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin:  auto;
+  height: auto;
+  width: 50%;
+  max-width: 100%;
+  border: 3px solid blue;
+  background-color: aqua;
+    /* align-items: flex-start; */
+}
+
+/* Images Row 1 w/ text*/
+.image-container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin:  auto;
+  height: auto;
+  width: 50%;
+  border: 3px solid blue;
+  background-color: aqua;
+    /* align-items: flex-start; */
+}
+
+
+
+.image-item{
+  margin: 1vh;
+  
+}
+
+.title-container1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 3px solid cornflowerblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: blue;
+  background-color: aqua;
+  height: 2vh;
+  width: 40%;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin: auto;
+}
+menu-item{
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* subtitles to title maybe extra info blurb like location */
+/* .container1-titles{
+  display: flex;
+  border: 3px solid pink;
+  color: aqua;
+  padding: 5px;
+  margin: 3rem auto;
+} */
+
+
+
+@media screen and (max-width: 600px){
+  .image-container1 .image-container2{
+      flex-direction: column;
+      height: 700px;
+      padding-bottom: 200px;
+  }
+}
+
+
+
