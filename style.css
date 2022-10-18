@@ -1,4 +1,6 @@
 /* Nav Bar */
+
+@media screen and (min-width: 961px) {
 .topnav {
   display: flex;
   justify-content: space-between;
@@ -196,7 +198,9 @@ html {
 
 }
  */
-
+ 
+/* End of Desktop Media Query */
+}
 
 
 @media screen and (min-width: 764){
