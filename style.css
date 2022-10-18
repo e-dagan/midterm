@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   border: 3px solid cornflowerblue;
-    
 }
 
 .topnav a {
@@ -12,19 +11,15 @@
     padding: 14px 16px;
     text-decoration: none;
     max-height:50vh;  
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+    font-family: 'Lexend', sans-serif;}
+
 
 .topnav img{
   max-height:50vh;  
 }
 
-/* Change color on hover */
 .topnav a:hover {
-    /* color: white;
-    background-color: lightgray); */
     text-decoration: underline;
-
 }
 
 /* Title */
@@ -49,50 +44,37 @@
   background-color: yellow;
   color: black;
   height: auto;
-  flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 12px;
-
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* Images Row 1 w/ text*/
+
 .image-container1{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-left: 20%;
   padding-right: 20%;
-  margin:  auto;
+  margin:  5vh;
   height: auto;
   width: 50%;
   max-width: 100%;
   border: 3px solid blue;
   background-color: aqua;
-    /* align-items: flex-start; */
 }
 
-/* Images Row 1 w/ text*/
-.image-container2{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-left: 20%;
-  padding-right: 20%;
-  margin:  auto;
-  height: auto;
-  width: 50%;
-  border: 3px solid blue;
-  background-color: aqua;
-    /* align-items: flex-start; */
+.image-link a:hover{
+  border: 3px solid red;
 }
-
-
 
 .image-item{
   margin: 1vh;
-  
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  border: 3px solid blue;
+  background-color: red;
 }
 
 .title-container1{
@@ -101,7 +83,7 @@
   justify-content: space-around;
   border: 3px solid cornflowerblue;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: blue;
+  color: pink;
   background-color: aqua;
   height: 2vh;
   width: 40%;
@@ -110,27 +92,78 @@
   margin: auto;
 }
 menu-item{
-  margin: 0;
-  padding: 0;
-  
+  font-family: 'Lexend', sans-serif;
 }
 
-/* subtitles to title maybe extra info blurb like location */
-/* .container1-titles{
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+/* ----Level 2 Pages Styling ----*/
+
+h1{
+  font-family: 'Lexend', sans-serif;
+}
+
+#v60-title{
+  font-family: 'Lexend', sans-serif;
+  margin-left: 65px;
+  border: 3px solid red;
+}
+
+.content-container{
   display: flex;
-  border: 3px solid pink;
-  color: aqua;
-  padding: 5px;
-  margin: 3rem auto;
-} */
+  padding: 10px;
+  border: 3px solid red;
+}
+.large-img{
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  margin-top: 20px;
+  margin: 50px;
+  border: 3px solid cornflowerblue;
+  background-color: beige;
+
+}
+
+.info-text{
+  font-family: 'Lexend', sans-serif;
+  border: 3px solid cornflowerblue;
+  margin: 50px;
+  font-weight: bold;
+
+}
+
+.child-info{
+  margin-left: 10px;
+  font-weight: 100;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.image-item { transition: all .4s ease-in-out; }
 
 
+.image-item:hover{
+  transform: translateY(-7px);
+  transition: .3s ease-in-out;
+  /* transition: transform 250ms linear; */
+  /* transition:cubic-bezier(0.19, 1, 0.22, 1) 1s linear; */
+  /* transition: .3s linear; */
 
-@media screen and (max-width: 600px){
-  .image-container1 .image-container2{
+}
+
+
+@media screen and (max-width: 500){
+  .image-container1{
       flex-direction: column;
       height: 700px;
       padding-bottom: 200px;
+      
   }
 }
 
