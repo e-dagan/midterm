@@ -128,7 +128,7 @@ menu-item{
 
 
 @media screen and (max-width: 600px){
-  .image-container1 .image-container2{
+  .image-container1 .image-container2 .flexbox-container{
       flex-direction: column;
       height: 700px;
       padding-bottom: 200px;
