@@ -1,6 +1,6 @@
 /* Nav Bar */
 
-@media screen and (min-width: 961px) {
+/* @media screen and (min-width: 961px) { */
 .topnav {
   display: flex;
   justify-content: space-between;
@@ -34,7 +34,7 @@ a:visited { text-decoration: none; }
 .center{
   color: black;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .cards {
@@ -42,18 +42,20 @@ a:visited { text-decoration: none; }
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
+
 }
 
 
 /* Items  flex the img1 and title1 children in a column */
 .flexbox-container{
-  display: flex;
+  display: inline;
   border: 3px solid red;
   background-color: yellow;
   color: black;
-  height: auto;
-  justify-content: space-between;
-  align-items: flex-end;
+  
+  /* height: auto; */
+  /* justify-content: center; */
+  /* align-items: center; */
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -61,15 +63,16 @@ a:visited { text-decoration: none; }
 .image-container1{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding-left: 20%;
-  padding-right: 20%;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
   margin:  5vh;
   height: auto;
   width: 50%;
   max-width: 100%;
   border: 3px solid blue;
-  background-color: aqua;
+  background-color: lightcyan;
+
 }
 
 .image-link a:hover{
@@ -78,7 +81,7 @@ a:visited { text-decoration: none; }
 
 .image-item{
   margin: 1vh;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   width: 400px;
   height: 400px;
   border: 3px solid blue;
@@ -101,7 +104,7 @@ a:visited { text-decoration: none; }
   text-decoration: none;
   color: black;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lexend', sans-serif;
 }
 
 .title-container1{
@@ -123,9 +126,6 @@ menu-item{
 }
 
 
-
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -144,72 +144,30 @@ html {
 }
 
 
-
-/* ----Level 2 Pages Styling ----*/
-
-/* h1{
-  font-family: 'Lexend', sans-serif;
-}
-
-#v60-title{
-  font-family: 'Lexend', sans-serif;
-  margin-left: 65px;
-  border: 3px solid red;
-}
-
-.content-container{
-  display: flex;
-  padding: 10px;
-  border: 3px solid red;
-}
-.large-img{
-  width: 400px;
-  height: 400px;
-  padding: 20px;
-  margin-top: 20px;
-  margin: 50px;
-  border: 3px solid cornflowerblue;
-  background-color: beige;
+/* Mobile IphoneXR */
+@media screen and (max-width: 414px){
+  .flexbox-container{
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: center;
   
-}
 
-.large-img img{
-  width: 400px;
-  height: 400px;
-  position: relative;
-}
+  }
 
-#v60{
-  border: 3px solid turquoise;
-}
+  .image-container1{
+    display: inline;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    justify-content: space-between;
+  }
 
-.info-text{
-  font-family: 'Lexend', sans-serif;
-  border: 3px solid cornflowerblue;
-  margin: 50px;
-  font-weight: bold;
+  .image-item{
+    width: 300px;
+    height: 300px;
+  }    
 
-}
-
-.child-info{
-  margin-left: 10px;
-  font-weight: 100;
-  font-family: 'Quicksand', sans-serif;
-
-}
- */
- 
-/* End of Desktop Media Query */
-}
-
-
-@media screen and (min-width: 764){
-  .flexbox-container1{
-      flex-direction: column;
-      flex-wrap: wrap;
-      height: 700px;
-      padding-bottom: 200px;
-      
+  .caption-text{
+    font-size: medium;
   }
 }
 
